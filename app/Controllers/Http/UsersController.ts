@@ -45,6 +45,7 @@ export default class UsersController {
     try {
       const user = await User.findBy('id', params.id)
       user?.merge(input)
+      await user?.save()
       return response.status(200).json({
         code: 200,
         status: 'success',
