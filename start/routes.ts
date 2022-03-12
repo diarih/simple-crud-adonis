@@ -21,7 +21,7 @@
 import Route from '@ioc:Adonis/Core/Route'
 
 Route.get('/', async () => {
-  return { hello: 'Deploy Heroku PG' }
+  return { hello: 'Deployy Heroku PG' }
 })
 
 Route.group(() => {
